@@ -1,0 +1,1 @@
+export const links = ["HOME","ABOUT","WORK","SKILLS","CONTACT"];

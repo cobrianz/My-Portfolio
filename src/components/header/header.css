@@ -1,0 +1,51 @@
+.header{
+    width: 94vw;
+}
+
+nav{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    position: fixed;
+}
+
+.logo img{
+    width: 7rem;
+    opacity: .7;
+    cursor: pointer;
+    transition: transform 400ms ease;
+    -webkit-transition: transform 400ms ease;
+    -moz-transition: transform 400ms ease;
+    -ms-transition: transform 400ms ease;
+    -o-transition: transform 400ms ease;
+}
+
+nav img:hover{
+    opacity: 1;
+}
+
+nav ul{
+    display: flex;  
+    gap: 3rem;
+}
+
+nav ul li a{
+    color: #6f6c6c;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+nav ul li a:hover{
+    color: #6a5acd;
+}
+
+.menu__bar {
+    display: none;
+}
+
+.menu__bar img{
+    position: absolute;
+    width: 1rem;
+}
