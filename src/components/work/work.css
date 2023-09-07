@@ -1,0 +1,111 @@
+.work{
+    width: 100%;
+    background-image: linear-gradient(to top, transparent, transparent, transparent, #f0efef), url(../../assets/bgIMG.png);
+    padding-bottom: 5rem;
+}
+
+.projects{
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 4rem;
+    gap: 2rem;
+
+}
+
+.projects > div{
+    width: calc(100%/3);
+    background: #fff;
+    padding: 1.5rem;
+    width: 20rem;
+    height: 25rem;
+    border-radius:1rem;
+    -webkit-border-radius:1rem;
+    -moz-border-radius:1rem;
+    -ms-border-radius:1rem;
+    -o-border-radius:1rem;
+}
+
+.work__details{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.image__details{
+    display: flex;
+    flex-direction: column;
+}
+
+.image__details img{
+    border-radius: .6rem;
+    -webkit-border-radius: .6rem;
+    -moz-border-radius: .6rem;
+    -ms-border-radius: .6rem;
+    -o-border-radius: .6rem;
+    transition: transform 1s ease;
+    -webkit-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
+}
+
+
+.deploy__links{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    bottom: 50%;
+    margin: auto;
+    width: 6rem;
+    height:2.5rem;
+    
+}
+.deploy__links a img{
+    width: 2rem;
+    background: #828384;
+    padding: .4rem;
+    display: block;
+}
+
+.category{
+    position: relative;
+    bottom: 18%;
+    background: #fff;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #828384;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+
+.category:hover{
+    display: block;
+}
+
+
+.work__details .sub__title{
+    position: relative;
+    bottom: 10%;
+    font-weight: bold;
+    color: #828384;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.work__details .review{
+    position: relative;
+    bottom: 5%;
+    text-align: center;
+    font-size: 12px;
+}

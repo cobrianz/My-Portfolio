@@ -5,13 +5,15 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
+  border: none;
+  
 }
 .app {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 6rem;  
   appearance: unset;
 }
 
@@ -21,4 +23,14 @@ a{
 
 li{
   list-style: none;
+}
+
+.title{
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.title span{
+  color: slateblue;
 }

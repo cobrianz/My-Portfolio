@@ -1,7 +1,7 @@
 .hero{
     width: 100vw;
     height: 100vh;
-    background-image: url(../../assets/bgIMG.png);
+    background-image: linear-gradient(to bottom, transparent, transparent, transparent, #fff), url(../../assets/bgIMG.png);
     background-position: center;
     background-size: cover;
 }
@@ -17,6 +17,7 @@
     gap: 2rem;
     left: 3vw;
 }
+
 
 .social__links a img{
     width: 2rem;
@@ -37,16 +38,17 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    position: fixed;
+    position: relative;
     left: 36%;
-    top: 30%;
+    top: 20vh;
 }
+
 
 .home__profile img{
     width: 35rem;
-    position: fixed;
+    position: relative;
     left: 40%;
-    bottom: 0;
+    top: -56vh;
 }
 
 .scroll__dots{
@@ -60,7 +62,7 @@
     gap: 1rem;
 }
 
-.scroll__dots a>div{
+.scroll__dots a button{
     width: 1rem;
     aspect-ratio: 1/1;
     background: #808080;
@@ -69,6 +71,7 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;   
+    cursor: pointer;
 }
 
 .scroll__dots a .active{
@@ -76,9 +79,9 @@
 }
 
 .home__name{
-    position: fixed;
-    left: 20%;
-    top: 20%;
+    position: relative;
+    left: 20rem;
+    top: -85rem;
     background: #fff;
     width: fit-content;
     display: flex;
@@ -112,9 +115,9 @@
 }
 
 .home__name-1{
-    position: fixed;
-    left: 30%;
-    top: 40%;
+    position: relative;
+    left: 30rem;
+    top: -80rem;
     background: #fff;
     width: fit-content;
     border-radius: .5rem;
@@ -124,11 +127,11 @@
     -o-border-radius: .5rem;
     padding: 1rem;
     text-align: end;
+    
 }
 
 .home__name-1 p{
     font-size: 1.3rem;
     color: #808080;
     font-weight: 700;
-    line-height: 1.4rem;
 }

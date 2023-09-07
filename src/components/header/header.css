@@ -9,6 +9,7 @@ nav{
     justify-content: space-between;
     padding: 2rem;
     position: fixed;
+    z-index: 1;
 }
 
 .logo img{
@@ -41,11 +42,34 @@ nav ul li a:hover{
     color: #6a5acd;
 }
 
-.menu__bar {
+#closeButton{
+    display: none;
+}
+.menu__btn{
+    width: 1rem;
+    position: absolute;
+    right: 3vw;
+    padding-top: 2rem;
     display: none;
 }
 
-.menu__bar img{
-    position: absolute;
-    width: 1rem;
+@media screen and (max-width: 1200px) {
+    nav ul{
+        right: -40%;
+        position: absolute;
+        flex-direction: column;
+        top: 3rem;
+        background: #eeebeb;
+        text-align: center;
+        padding: 1rem 3rem;
+        border-radius: .4rem;
+        -webkit-border-radius: .4rem;
+        -moz-border-radius: .4rem;
+        -ms-border-radius: .4rem;
+        -o-border-radius: .4rem;
+}
+    #openButton{
+        display: block;
+    }
+    
 }

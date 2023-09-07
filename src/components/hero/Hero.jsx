@@ -22,12 +22,12 @@ const hero = () => {
           <p>WEB DEVELOPER <br />FREELANCER</p>
         </div>
         <div className="scroll__dots">
-          <a href="#"><div className='active'></div></a>
-          <a href="#"><div></div></a>
-          <a href="#"><div></div></a>
-          <a href="#"><div></div></a>
-          <a href="#"><div></div></a>
-          <a href="#"><div></div></a>
+          <a href="#"><button className='active'></button></a>
+          <a href="#"><button></button></a>
+          <a href="#"><button></button></a>
+          <a href="#"><button></button></a>
+          <a href="#"><button></button></a>
+          <a href="#"><button></button></a>
         </div>
         <div className="social__links">
           <a href="#twitter"> <img src={twitter} alt="" /></a>
