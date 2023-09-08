@@ -135,3 +135,68 @@
     color: #808080;
     font-weight: 700;
 }
+
+@media screen and (max-width: 1200px) {
+    .circle{
+        left: 18vw;
+        top: 30vh;
+        width: 35rem;
+        height: 35rem;
+    }
+    .home__profile img{
+        top: -27vh;
+        left: 18vw;
+    }
+    .home__name{
+        left: 6rem;
+        top: -117vh;
+    }
+
+    .home__name p{
+        font-size: 2rem;
+    }
+    .home__name small{
+        font-size: 14px;
+    }
+    .home__name small span{
+        font-size: 2rem;
+    }
+
+    .home__name-1 p{
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .circle{
+        left: 15vw;
+        top: 30vh;
+        width: 20rem;
+        height: 20rem;
+    }
+    .home__profile img{
+        width: 20rem;
+        top: -20vh;
+        left: 15vw;
+    }
+
+    .home__name{
+        left: 9rem;
+        top: -101vh;
+        background: transparent;
+    }
+
+    .home__name p{
+        display: none;
+    }
+    .home__name-1{
+        left: 9rem;
+        top: -32vh;
+        background: transparent;
+        text-align: center;
+    }
+    .social__links a img{
+        width: 1rem;
+    }
+}

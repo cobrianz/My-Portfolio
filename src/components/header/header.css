@@ -42,12 +42,9 @@ nav ul li a:hover{
     color: #6a5acd;
 }
 
-#closeButton{
-    display: none;
-}
 .menu__btn{
     width: 1rem;
-    position: absolute;
+    position: fixed;
     right: 3vw;
     padding-top: 2rem;
     display: none;
@@ -67,9 +64,8 @@ nav ul li a:hover{
         -moz-border-radius: .4rem;
         -ms-border-radius: .4rem;
         -o-border-radius: .4rem;
-}
+    }
     #openButton{
         display: block;
     }
-    
 }
