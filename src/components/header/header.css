@@ -9,7 +9,7 @@ nav{
     justify-content: space-between;
     padding: 2rem;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 .logo img{
@@ -64,6 +64,7 @@ nav ul li a:hover{
         -moz-border-radius: .4rem;
         -ms-border-radius: .4rem;
         -o-border-radius: .4rem;
+        z-index: 1;
     }
     #openButton{
         display: block;

@@ -8,31 +8,35 @@ import profile from '../../assets/profile.png'
 const hero = () => {
   return (
     <div className='hero'>
-      <Header />
-      <div className="home">
-        <div className='home__profile'>
-          <div className='circle'></div>
-          <img src={profile} alt="" />
+      <div className='navbar'>
+        <Header />
+      </div>
+      <div className="hero__text">
+        <div className="hero__text-1">
+          <h3>        Hi, I am <span>Brian Cheruiyot</span> <br /> A Developer & Freelancer
+          </h3>
         </div>
-        <div className="home__name">
-          <p>👋🏼</p>
-          <small>Hello, I am <br /><span>BRIAN</span></small>
+        <div className="hero__text-2">
+          <h4>Based in Kenya</h4>
         </div>
-        <div className="home__name-1">
-          <p>WEB DEVELOPER <br />FREELANCER</p>
+      </div>
+      <div className="hero__section">
+        <div className="social__links">
+          <img src={twitter} alt="" />
+          <img src={facebook} alt="" />
+          <img src={github} alt="" />
         </div>
-        <div className="scroll__dots">
+        <div className="hero__section-profile">
+          <img src={profile} className='hero__details' />
+          <div className="circle hero__details`"></div>
+        </div>
+        <div className="scroll__buttons">
           <a href="#"><button className='active'></button></a>
           <a href="#"><button></button></a>
           <a href="#"><button></button></a>
           <a href="#"><button></button></a>
           <a href="#"><button></button></a>
           <a href="#"><button></button></a>
-        </div>
-        <div className="social__links">
-          <a href="#twitter"> <img src={twitter} alt="" /></a>
-          <a href="#facebook"><img src={facebook} alt="" /></a>
-          <a href="#github"><img src={github} alt="" /></a>
         </div>
       </div>
     </div>

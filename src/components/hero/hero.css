@@ -4,56 +4,103 @@
     background-image: linear-gradient(to bottom, transparent, transparent, transparent, #fff), url(../../assets/bgIMG.png);
     background-position: center;
     background-size: cover;
-}
-
-.social__links{
-    position: fixed;
-    width: 3rem;
-    bottom: 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.hero__text-1{
+    position: relative;
+    left: 10rem;
+    top: 10rem;
+    background: #ffffff;
+    width: fit-content;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.hero__text-1 h3{
+    color: #808080;
+}
+
+.hero__text-1 h3 span{
+    color: #6a5acd;
+    font-size: 1.5rem;
+}
+
+.hero__text-2{
+    position: relative;
+    left: 20rem;
+    top: 50vh;
+    font-size: 1.5rem;
+    background: #fff;
+    width: fit-content;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    color: #565454;
+}
+
+.hero__section{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+}
+.social__links{
+    position: fixed;
     left: 3vw;
+    bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: fit-content;
+    z-index: 3;
 }
 
-
-.social__links a img{
-    width: 2rem;
+.social__links img{
     opacity: .6;
-    transition: transform 400ms ease;
+    width: 1.5rem;
 }
 
-.social__links a img:hover{
+.social__links img:hover{
     opacity: 1;
 }
 
+
+.hero__section-profile {
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
 .circle{
-    background: linear-gradient(80deg, gray, white);
-    width: 45rem;
-    height: 45rem;
+    background: linear-gradient(210deg, #808080, #ffffff);
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
     border-radius: 50%;
+    top: 0;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    position: relative;
-    left: 36%;
-    top: 20vh;
+    z-index: -1;
 }
 
 
-.home__profile img{
-    width: 35rem;
-    position: relative;
-    left: 40%;
-    top: -56vh;
+.hero__section-profile img{
+    width: 30rem;
 }
 
-.scroll__dots{
-    width: 1rem;
-    height: 6rem;
+.scroll__buttons{
     position: fixed;
     right: 3vw;
     top: 40%;
@@ -62,141 +109,69 @@
     gap: 1rem;
 }
 
-.scroll__dots a button{
+.scroll__buttons a button{
     width: 1rem;
-    aspect-ratio: 1/1;
-    background: #808080;
+    background: gray;
+    height: 1rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    -o-border-radius: 50%;   
-    cursor: pointer;
+    -o-border-radius: 50%;
 }
 
-.scroll__dots a .active{
-    background: #000;
+.scroll__buttons a .active{
+    background: #000000;
 }
 
-.home__name{
-    position: relative;
-    left: 20rem;
-    top: -85rem;
-    background: #fff;
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    border-radius: .8rem;
-    -webkit-border-radius: .8rem;
-    -moz-border-radius: .8rem;
-    -ms-border-radius: .8rem;
-    -o-border-radius: .8rem;
-    padding: 1rem;
+@media screen and (max-width: 1556px) {
+    .hero__text-2{
+        left: 10rem;
+    }
 }
 
-.home__name p{
-    font-size: 3rem;
+@media screen and (max-width: 1250px){
+    .hero__text-1{
+        position: unset;
+        margin: 8rem auto 0;
+        background: transparent;
+        font-size: larger;
+        transition: .5s ease;
+        -webkit-transition: .5s ease;
+        -moz-transition: .5s ease;
+        -ms-transition: .5s ease;
+        -o-transition: .5s ease;
 }
 
-.home__name small{
-    display: flex;
-    flex-direction: column;
-    color: #808080;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
+    .hero__text-2{
+       position: unset;
+       margin: auto;
+       background: transparent;
+       font-size: medium;
+       transition: .7s ease;
+       -webkit-transition: .7s ease;
+       -moz-transition: .7s ease;
+       -ms-transition: .7s ease;
+       -o-transition: .7s ease;
 }
-
-.home__name small span{
-    font-size: 3rem;
-    color: #605959;
-}
-
-.home__name-1{
-    position: relative;
-    left: 30rem;
-    top: -80rem;
-    background: #fff;
-    width: fit-content;
-    border-radius: .5rem;
-    -webkit-border-radius: .5rem;
-    -moz-border-radius: .5rem;
-    -ms-border-radius: .5rem;
-    -o-border-radius: .5rem;
-    padding: 1rem;
-    text-align: end;
-    
-}
-
-.home__name-1 p{
-    font-size: 1.3rem;
-    color: #808080;
-    font-weight: 700;
-}
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px){
+    .hero__text-1{
+        padding: 0;
+        margin-top: 5rem;
+    }
+    .hero__text-2{
+        margin: 1px auto;
+    }
     .circle{
-        left: 18vw;
-        top: 30vh;
-        width: 35rem;
-        height: 35rem;
-    }
-    .home__profile img{
-        top: -27vh;
-        left: 18vw;
-    }
-    .home__name{
-        left: 6rem;
-        top: -117vh;
-    }
-
-    .home__name p{
-        font-size: 2rem;
-    }
-    .home__name small{
-        font-size: 14px;
-    }
-    .home__name small span{
-        font-size: 2rem;
-    }
-
-    .home__name-1 p{
-        font-size: 1rem;
-    }
-}
-
-
-@media screen and (max-width: 700px){
-    .circle{
-        left: 15vw;
-        top: 30vh;
         width: 20rem;
         height: 20rem;
+        right: 0;
+        padding: 2rem;
     }
-    .home__profile img{
-        width: 20rem;
-        top: -20vh;
-        left: 15vw;
-    }
-
-    .home__name{
-        left: 9rem;
-        top: -101vh;
-        background: transparent;
+    .hero__section-profile img{
+        width: 18rem;
     }
 
-    .home__name p{
-        display: none;
-    }
-    .home__name-1{
-        left: 9rem;
-        top: -32vh;
-        background: transparent;
-        text-align: center;
-    }
-    .social__links a img{
-        width: 1rem;
-    }
+
+}
 }
