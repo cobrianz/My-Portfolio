@@ -1,0 +1,109 @@
+.contact__section{
+   
+}
+.contact__section-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e2d9d99a;
+    gap: 1rem;
+    padding:1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.contact p{
+    font-weight: bold;
+    color: #6c6e6e;
+    font-size: 12px;
+}
+.contact img{
+    width: 1.5rem;
+}
+
+form{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+   
+    flex-direction: column;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+form input,textarea{
+    background: #e2d9d96c;
+    width: 100%;
+    padding: .8rem ;
+    text-align: left;
+    border-radius: .9rem;
+    -webkit-border-radius: .9rem;
+    -moz-border-radius: .9rem;
+    -ms-border-radius: .9rem;
+    -o-border-radius: .9rem;
+    color: #000;
+}
+
+form textarea{
+    width: 100%;
+    height: 10rem;
+    resize: none;
+}
+
+form button{
+    width: fit-content;
+    margin: 0 auto;
+    padding: .7rem 1rem;
+    background: #a599f2b1;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    font-weight: bold;
+    color: #3c4444;
+}
+
+form button:hover{
+    color: white;
+    background: #892be2c1;
+}
+
+.copy{
+    color: #6c6e6e;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 700px){
+    .contact__section-1{
+        flex-direction: column;
+        font-size: 12px;
+        align-items: flex-end;
+        gap: 2rem;
+    }   
+    form button{
+        padding: .6rem;
+        border-radius: .4rem;
+        -webkit-border-radius: .4rem;
+        -moz-border-radius: .4rem;
+        -ms-border-radius: .4rem;
+        -o-border-radius: .4rem;
+        font-size: 12px;
+        font-weight: 500;
+}
+    
+}

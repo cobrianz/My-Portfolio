@@ -7,7 +7,7 @@ const work = () => {
   return (
     <div className='work'>  
       <div className="title">
-       <h1>My Creative <span>Portifolio</span><br />
+       <h1>My Creative <span>Portfolio</span><br />
         Section</h1>
      </div>
      <div className="projects">

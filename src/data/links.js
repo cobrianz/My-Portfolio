@@ -1,1 +1,2 @@
 export const links = ["HOME","ABOUT","WORK","SKILLS","CONTACT"];
+export const SocialLinks = ['https://twitter.com/coding445?t=6gGRmKDVMTNbSvEg0rv6Vg&s=09','','https://www.linkedin.com/in/brian-cheruiyot-82590b243','https://github.com/cobrianz']

@@ -81,8 +81,32 @@
     z-index: 1;
 }
 
+.job__image{
+    width: 3rem;
+    position: absolute;
+}
+
+.sass{
+    right: 35%;
+    top: 25%;
+}
+
+.react{
+    right: 20%;
+    top: 50%;
+}
+
+.git{
+    right: 30%;
+    bottom: 25%;
+}
+
+.js{
+    right: 15%;
+    bottom: 10%;
+}
 .circle{
-    background: linear-gradient(210deg, #808080, #ffffff);
+    background: linear-gradient(210deg, #808080bb, #ffffff);
     width: 30rem;
     height: 30rem;
     position: absolute;
@@ -102,7 +126,7 @@
 
 .scroll__buttons{
     position: fixed;
-    right: 3vw;
+    right: 1rem;
     top: 40%;
     display: flex;
     flex-direction: column;
@@ -110,9 +134,9 @@
 }
 
 .scroll__buttons a button{
-    width: 1rem;
-    background: gray;
-    height: 1rem;
+    background: #808080d1;
+    width: .8rem;
+    height: .8rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -154,6 +178,23 @@
        -ms-transition: .7s ease;
        -o-transition: .7s ease;
 }
+
+.git{
+    left: 10%;
+    transition: 2s ease;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -ms-transition: 2s ease;
+    -o-transition: 2s ease;
+}
+
+.react{
+    top: 20%;
+    left: 25%;
+}
+.sass{
+    right: 12%;
+}
 @media screen and (max-width: 768px){
     .hero__text-1{
         padding: 0;
@@ -172,6 +213,23 @@
         width: 18rem;
     }
 
+    .react{
+        top: 10%;
+        left: 35%;
+    }
+    .sass{
+        right: 40%;
+        top: 45%;
+    }
+    .scroll__buttons a button{
+        width: .6rem;
+        height: .6rem;
+        
+    }
+
+    .scroll__buttons{
+        right: 1.5rem;
+    }
 
 }
 }

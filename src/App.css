@@ -6,6 +6,7 @@
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
   border: none;
+  outline: none;
   
 }
 .app {
@@ -26,7 +27,7 @@ li{
 }
 
 .title{
-  margin-top: 4rem;
+  margin-top: 6rem;
   text-align: center;
   font-size: 1.2rem;
 }
@@ -34,6 +35,7 @@ li{
 .title span{
   color: slateblue;
 }
+
 
 @media screen and (max-width: 700px){
   .title{

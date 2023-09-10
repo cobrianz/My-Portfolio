@@ -3,7 +3,7 @@ import html from '../assets/html.png';
 import js from '../assets/javascript.png';
 import sass from '../assets/sass.png';
 import css from '../assets/css.png';
-import php from '../assets/css.png';
+import php from '../assets/brand-php.png';
 
 export const SkillsData= [
     {

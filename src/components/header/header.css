@@ -1,72 +1,116 @@
-.header{
-    width: 94vw;
-}
-
-nav{
-    width: 70%;
+/* Styles for the header */
+.header {
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 1rem 3vw;
     position: fixed;
     z-index: 2;
-}
+    background: #ffffff5d;
+  }
 
-.logo img{
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
     width: 7rem;
-    opacity: .7;
+    opacity: 0.7;
     cursor: pointer;
     transition: transform 400ms ease;
     -webkit-transition: transform 400ms ease;
     -moz-transition: transform 400ms ease;
     -ms-transition: transform 400ms ease;
     -o-transition: transform 400ms ease;
-}
+  }
 
-nav img:hover{
+nav{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+  
+  nav img:hover {
     opacity: 1;
-}
-
-nav ul{
-    display: flex;  
+  }
+  
+  nav ul {
+    display: flex;
     gap: 3rem;
-}
-
-nav ul li a{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li a {
     color: #6f6c6c;
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-weight: 600;
-}
-
-nav ul li a:hover{
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
     color: #6a5acd;
-}
-
-.menu__btn{
+  }
+  
+  .menu__btn {
     width: 1rem;
     position: fixed;
     right: 3vw;
-    padding-top: 2rem;
+    margin: 2rem;
+    cursor: pointer;
     display: none;
-}
+  }
+  
+  /* Media query for screens up to 1200px wide */
+  @media screen and (max-width: 1200px) {
+    nav ul {
+      right: -50%;
+      position: absolute;
+      flex-direction: column;
+      top: 3rem;
+      background: #ffffff;
+      text-align: center;
+      padding: 1rem 3rem;
+      border-radius: 0.4rem;
+      z-index: 1;
+    }
 
-@media screen and (max-width: 1200px) {
-    nav ul{
-        right: -40%;
-        position: absolute;
-        flex-direction: column;
-        top: 3rem;
-        background: #eeebeb;
-        text-align: center;
-        padding: 1rem 3rem;
-        border-radius: .4rem;
-        -webkit-border-radius: .4rem;
-        -moz-border-radius: .4rem;
-        -ms-border-radius: .4rem;
-        -o-border-radius: .4rem;
-        z-index: 1;
+      /* Styles for the open menu */
+ 
+  
+  .menu__items.open {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    transition: right 0.3s ease-in-out;
+  }
+  
+  .menu__items.hide {
+    right: -120%;
+    opacity: 0;
+    visibility: hidden;
+    transition: right 0.3s ease-in-out;
+  }
+  
+  .menu__btn.hide {
+    display: none;
+    
+  }
+
+  .menu__btn.openbars{
+    display: block;
+  }
+
+  }
+  
+  /* Media query for screens up to 768px wide */
+  @media screen and (max-width: 768px) {
+    .logo img {
+      width: 5rem;
+      opacity: 0.9;
     }
-    #openButton{
-        display: block;
-    }
-}
+  }
+  

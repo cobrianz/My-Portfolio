@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './header.css';
 import logo from '../../assets/logo.png';
 import { links } from '../../data/links';
@@ -6,34 +6,65 @@ import bars from '../../assets/baseline-density-small.png';
 import x from '../../assets/x.png';
 
 const Header = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  // Function to toggle the menu
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
+  // Function to close the menu
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
+  // Add event listener to close the menu when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        closeMenu();
+      }
+    }
+
+    if (isMenuOpen) {
+      document.addEventListener('click', handleClickOutside);
+    } else {
+      document.removeEventListener('click', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [isMenuOpen]);
 
   return (
-    <div className='header'>
+    <div className={`header ${isMenuOpen ? 'menu-open' : ''}`} ref={menuRef}>
       <nav>
         <div className="logo">
-          <img src={logo} alt="" />
+          <img src={logo} alt="Logo" />
         </div>
-        <ul className='menu__items'>
-          <li><a href="#home">{links[0]}</a></li>
-          <li><a href="#about">{links[1]}</a></li>
-          <li><a href="#work">{links[2]}</a></li>
-          <li><a href="#skills">{links[3]}</a></li>
-          <li><a href="#contact">{links[4]}</a></li>
+        <ul className={`menu__items ${isMenuOpen ? 'open' : ''}`}>
+          {links.map((link, index) => (
+            <li key={index}>
+              <a onClick={closeMenu} href={`#${link.toLowerCase()}`}>{link}</a>
+            </li>
+          ))}
         </ul>
       </nav>
       <img
         src={bars}
-        className='menu__btn'
+        className={`menu__btn ${isMenuOpen ? 'hide' : 'openbars'}`}
         id='openButton'
-        alt=""
-
+        alt="Open Menu"
+        onClick={toggleMenu}
       />
       <img
         src={x}
-        className='menu__btn'
+        className={`menu__btn ${isMenuOpen ? 'openbars' : 'hide'}`}
         id='closeButton'
-        alt=""
-
+        alt="Close Menu"
+        onClick={toggleMenu}
       />
     </div>
   );
