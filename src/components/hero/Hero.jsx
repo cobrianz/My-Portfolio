@@ -13,7 +13,6 @@ import js from '../../assets/javascript.png'
 import { SocialLinks } from '../../data/links';
 
 const hero = () => {
-
   return (
     <div className='hero'>
       <div className='navbar'>
@@ -45,11 +44,11 @@ const hero = () => {
           <div className="circle hero__details`"></div>
         </div>
         <div className="scroll__buttons">
-          <a href="#"><button className='active'></button></a>
           <a href="#"><button></button></a>
-          <a href="#"><button></button></a>
-          <a href="#"><button></button></a>
-          <a href="#"><button></button></a>
+          <a href="#about"><button></button></a>
+          <a href="#work"><button></button></a>
+          <a href="#skills"><button></button></a>
+          <a href="#contact"><button></button></a>
           <a href="#"><button></button></a>
         </div>
       </div>

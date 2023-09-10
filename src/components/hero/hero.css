@@ -142,8 +142,16 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    transition: transform 2s ease;
+    -webkit-transition: transform 2s ease;
+    -moz-transition: transform 2s ease;
+    -ms-transition: transform 2s ease;
+    -o-transition: transform 2s ease;
 }
 
+.scroll__buttons a button:hover{
+    scale: 1.2;
+}
 .scroll__buttons a .active{
     background: #000000;
 }

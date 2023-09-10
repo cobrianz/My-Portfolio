@@ -5,7 +5,7 @@ import left from '../../assets/chevron-left.png';
 import right from '../../assets/chevron-right.png';
 import { testimonialsData } from '../../data/testimonials';
 
-const testimonial = () => {
+const Testimonial = () => { // Updated component name to start with an uppercase letter
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrevClick = () => {
@@ -20,14 +20,14 @@ const testimonial = () => {
     <div className='testimonials'>
       <div className="title"></div>
       <div className="testimonial">
-        <AnimatePresence exitBeforeEnter initial={false}>
+        <AnimatePresence wait initial={false}>
           <motion.div
             key={currentIndex}
             className="testimonial__details"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
+            initial={{ scale: 0}}
+            animate={{ scale: 1 }}
+            exit={{ display: 0 }}
+            transition={{ duration: .1 }}
           >
             <img src={testimonialsData[currentIndex].image} alt="" className="testimonial__image" />
             <div className="testimonial__text">
@@ -48,4 +48,4 @@ const testimonial = () => {
   );
 };
 
-export default testimonial;
+export default Testimonial; // Updated the export name as well

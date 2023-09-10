@@ -63,7 +63,9 @@ form textarea{
     resize: none;
 }
 
-form button{
+/* ... Your existing CSS ... */
+
+form button {
     width: fit-content;
     margin: 0 auto;
     padding: .7rem 1rem;
@@ -75,12 +77,15 @@ form button{
     -o-border-radius: 12px;
     font-weight: bold;
     color: #3c4444;
-}
-
-form button:hover{
+    transition: background 0.3s, color 0.3s; /* Add transition properties for smooth animation */
+    cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+  }
+  
+  form button:hover {
     color: white;
     background: #892be2c1;
-}
+  }
+  
 
 .copy{
     color: #6c6e6e;

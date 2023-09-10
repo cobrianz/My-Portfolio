@@ -36,7 +36,18 @@ li{
   color: slateblue;
 }
 
+::-webkit-scrollbar{
+  width: 8px;
+}
 
+::-webkit-scrollbar-track{
+  background: linear-gradient(40deg, #fff, #7b70c1);
+}
+
+::-webkit-scrollbar-thumb{
+  background: #fff;
+  height: 1rem;
+}
 @media screen and (max-width: 700px){
   .title{
     margin-top: 3rem;

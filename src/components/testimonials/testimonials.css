@@ -23,14 +23,19 @@
     width: 100%;
     max-width: 30rem;
     display: flex;
-    flex-direction: column; /* Adjust to stack content vertically */
-    align-items: center; /* Center content horizontally */
-    background: #fff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adjust box-shadow */
-    padding: 2rem;
+    flex-direction: column;
+    /*Adjusttostackcontentvertically*/align-items: center;
+    /*Centercontenthorizontally*/background: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    /*Adjustbox-shadow*/padding: 2rem;
     border-radius: 1rem;
     transform: translateY(-50%);
-  }
+    transition: 1s ease-in;
+    -webkit-transition: 1s ease-in;
+    -moz-transition: 1s ease-in;
+    -ms-transition: 1s ease-in;
+    -o-transition: 1s ease-in;
+}
   
   .testimonial__details .testimonial__image {
     width: 4rem;
@@ -47,8 +52,10 @@
   }
   
   .testimonial__text p {
-    font-style: italic; /* Use italic font style */
     color: #454343;
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 12px;
   }
   
   .testimonial__text .details {
@@ -81,11 +88,11 @@
   }
   
   .chevrons img {
-    width: 3rem;
-    height: 3rem; /* Make the chevron buttons a consistent size */
+    width: 2rem;
+    height: 2rem; /* Make the chevron buttons a consistent size */
     background: #fff;
     padding: 0.5rem; /* Reduce padding */
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2); /* Adjust box-shadow */
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 1); /* Adjust box-shadow */
     cursor: pointer;
     border-radius: 50%;
   }
