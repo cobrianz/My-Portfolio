@@ -65,7 +65,7 @@ form textarea{
 
 /* ... Your existing CSS ... */
 
-form button {
+form .button {
     width: fit-content;
     margin: 0 auto;
     padding: .7rem 1rem;
@@ -81,7 +81,7 @@ form button {
     cursor: pointer; /* Add a pointer cursor to indicate interactivity */
   }
   
-  form button:hover {
+  form .button:hover {
     color: white;
     background: #892be2c1;
   }
