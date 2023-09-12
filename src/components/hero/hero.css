@@ -29,7 +29,7 @@
 }
 
 .hero__text-1 h3 span{
-    color: #6a5acd;
+    color: rgb(137, 43, 226);
     font-size: 1.5rem;
 }
 
@@ -122,6 +122,11 @@
 
 .hero__section-profile img{
     width: 30rem;
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
 }
 
 .scroll__buttons{
@@ -137,6 +142,7 @@
     background: #808080d1;
     width: .8rem;
     height: .8rem;
+    cursor: pointer;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -205,11 +211,16 @@
 }
 @media screen and (max-width: 768px){
     .hero__text-1{
-        padding: 0;
+        padding: 1rem;
         margin-top: 5rem;
+        font-size: 1.5rem;
+    }
+
+    .hero__text-1 h3 span{
+        font-size: inherit;
     }
     .hero__text-2{
-        margin: 1px auto;
+        display: none;
     }
     .circle{
         width: 20rem;
@@ -219,16 +230,11 @@
     }
     .hero__section-profile img{
         width: 18rem;
-    }
+}
 
-    .react{
-        top: 10%;
-        left: 35%;
-    }
-    .sass{
-        right: 40%;
-        top: 45%;
-    }
+   .sass, .react, .git, .js{
+    display: none;
+   }
     .scroll__buttons a button{
         width: .6rem;
         height: .6rem;

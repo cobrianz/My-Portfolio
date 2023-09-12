@@ -16,8 +16,8 @@ const work = () => {
                   <div className='image__details'>
                     <img src={work.image} alt="" />
                     <div className="deploy__links">
-                    <a href="#"><img src={github} alt="" /></a>
-                    <a href="#"><img src={eye} alt="" /></a>
+                    <a href={work.github}><img src={github} alt="" /></a>
+                    <a href={work.deploy}><img src={eye} alt="" /></a>
                     </div>
                   </div>
                     <span className='category'>{work.category}</span>

@@ -1,6 +1,6 @@
 import React from 'react'
 import './skills.css'
-import { SkillsData } from '../../data/skills';
+import { SkillsData, SchoolDetails } from '../../data/skills';
 const skills = () => {
   return (
     <div className='skills' id='skills'>
@@ -23,18 +23,27 @@ const skills = () => {
               <h2>2023</h2>
             </div>
             <div>
-            <div className="school">
-              <span>Freelancer Developer</span>
-              <small>Upwork.</small>
-            </div>
-            <div className='school'>
-              <span>React Development</span>
-              <small>Scrimba.</small>
-            </div>
-            <div className='school'>
-              <span>Web Development</span>
-              <small>ALX Africa.</small>
-            </div>
+              <div className="school">
+                <span>Freelancer Developer</span>
+                <small>Upwork.</small>
+                <div className="school__about">
+                  <p>{SchoolDetails[0]}</p>
+                </div>
+              </div>
+              <div className='school'>
+                <span>React Development</span>
+                <small>Scrimba.</small>
+                <div className="school__about">
+                  <p>{SchoolDetails[1]}</p>
+                </div>
+              </div>
+              <div className='school'>
+                <span>Web Development</span>
+                <small>ALX Africa.</small>
+                <div className="school__about">
+                  <p>{SchoolDetails[2]}</p>
+                </div>
+              </div>
             </div>
           </div>
           <div className="achievement">
@@ -42,22 +51,28 @@ const skills = () => {
               <h2>2022</h2>
             </div>
             <div>
-            <div className='school'>
-              <span>Advanced Javascript</span>
-              <small>Cisco Netcad School.</small>
-            </div>
+              <div className='school'>
+                <span>Advanced Javascript</span>
+                <small>Cisco Netcad School.</small>
+                <div className="school__about">
+                  <p>{SchoolDetails[3]}</p>
+                </div>
+              </div>
             </div>
           </div>
           <div className="achievement">
             <div className="year">
               <h2>2021</h2>
             </div>
-           <div>
-           <div className="school">
-              <span>Computer Science</span>
-              <small>Maseno University.</small>
+            <div>
+              <div className="school">
+                <span>Computer Science</span>
+                <small>Maseno University.</small>
+                <div className="school__about">
+                  <p>{SchoolDetails[4]}</p>
+                </div>
+              </div>
             </div>
-           </div>
           </div>
 
         </div>

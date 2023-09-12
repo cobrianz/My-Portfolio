@@ -39,7 +39,7 @@ const Header = () => {
   }, [isMenuOpen]);
 
   return (
-    <div className={`header ${isMenuOpen ? 'menu-open' : ''}`} ref={menuRef}>
+    <div className={`header ${isMenuOpen ? 'menu-open' : ''}`} id='home' ref={menuRef}>
       <nav>
         <div className="logo">
           <img src={logo} alt="Logo" />

@@ -1,6 +1,4 @@
-.contact__section{
-   
-}
+
 .contact__section-1{
     width: 100%;
     display: flex;
@@ -80,7 +78,7 @@ form .button {
     transition: background 0.3s, color 0.3s; /* Add transition properties for smooth animation */
     cursor: pointer; /* Add a pointer cursor to indicate interactivity */
   }
-  
+ 
   form .button:hover {
     color: white;
     background: #892be2c1;

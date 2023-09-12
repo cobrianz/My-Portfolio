@@ -5,6 +5,7 @@ import Work from './components/work/Work';
 import Skills from './components/skills/skills';
 import Testimonial from './components/testimonials/testimonial';
 import Contact from './components/contacts/contact';
+import Cursor from './components/cursor/cursor';
 function App() {
   return (
     <div className='app'>
@@ -14,6 +15,7 @@ function App() {
     <Skills/>
     <Testimonial/>
     <Contact/>
+    <Cursor/>
     </div>
   );
 }

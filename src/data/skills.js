@@ -31,3 +31,12 @@ export const SkillsData= [
         about : 'PHP',
       }
 ];
+
+
+export const SchoolDetails = [
+  "Lorem ipsum dolor, sit amet consectetur adipisicing elit Eum aperiam repellendus quasi vitae architecto facilis pariatur, adipisci porro quod vel",
+   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum aperiam repellendus quasi vitae architecto facilis pariatur, adipisci porro quod vel?",
+   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum aperiam repellendus quasi vitae architecto facilis pariatur, adipisci porro quod vel?",
+   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum aperiam repellendus quasi vitae architecto facilis pariatur, adipisci porro quod vel?",
+     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum aperiam repellendus quasi vitae architecto facilis pariatur, adipisci porro quod vel?"
+]

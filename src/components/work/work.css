@@ -54,6 +54,7 @@
 }
 
 
+
 .deploy__links{
     display: flex;
     justify-content: center;
@@ -65,10 +66,24 @@
     height:2.5rem;
     
 }
+
+  .work__details img:hover{
+    opacity: .3; /* Display the links when hovering over .image__details */
+  }
+  
+  .deploy__links a{
+    display: none;
+  }
+
+  .image__details:hover .deploy__links a{
+    display: flex;
+  }
+
 .deploy__links a img{
-    width: 2rem;
+    width: 3rem;
+    height: 3rem;
     background: #828384;
-    padding: .4rem;
+    padding: .6rem;
     display: block;
 }
 
