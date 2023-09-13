@@ -17,7 +17,7 @@ const Testimonial = () => { // Updated component name to start with an uppercase
   };
 
   return (
-    <div className='testimonials'>
+    <div className='testimonials container' id='testimonials'>
       <div className="title"></div>
       <div className="testimonial">
         <AnimatePresence wait initial={false}>

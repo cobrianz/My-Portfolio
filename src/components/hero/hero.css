@@ -1,6 +1,5 @@
 .hero{
     width: 100vw;
-    height: 100vh;
     background-image: linear-gradient(to bottom, transparent, transparent, transparent, #fff), url(../../assets/bgIMG.png);
     background-position: center;
     background-size: cover;
@@ -9,50 +8,97 @@
     justify-content: space-between;
 }
 
-.hero__text-1{
-    position: relative;
-    left: 10rem;
-    top: 10rem;
-    background: #ffffff;
-    width: fit-content;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
-}
-
-.hero__text-1 h3{
-    color: #808080;
-}
-
-.hero__text-1 h3 span{
-    color: rgb(137, 43, 226);
-    font-size: 1.5rem;
-}
-
-.hero__text-2{
-    position: relative;
-    left: 20rem;
-    top: 50vh;
-    font-size: 1.5rem;
-    background: #fff;
-    width: fit-content;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
-    color: #565454;
-}
-
-.hero__section{
+.home{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 1rem;
+}
+
+.home >img{
+    width: 6rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.home small{
+    font-size: 2rem;
+}
+
+.home small>span{
+    color: #6a5acd;
+}
+.home >p{
+    width: 40%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.home__image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 4rem;
+    
+}
+
+.home__image img{
+    width: 50%;
+    filter: brightness(90%);
+    -webkit-filter: brightness(90%);
+}
+.btn{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn img{
+    width: 1rem;
+    margin-right: 0.5rem;
+    filter: invert();
+    -webkit-filter: invert();
+}
+
+.btn > button{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background: rgb(167, 154, 253);
+    font-weight: 600;
+    padding: .3rem .7rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.btn a{
+    font-size: 12px;
+    color: #000000;
+    font-weight: 500;
+    background: #fff;
+    padding: .3rem .7rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+}
+.btn a img{
+    filter: none;
+    -webkit-filter: none;
+}
+
+.btn a:hover{
+    color: #8a2ce2;
 }
 .social__links{
     position: fixed;
@@ -72,61 +118,6 @@
 
 .social__links img:hover{
     opacity: 1;
-}
-
-
-.hero__section-profile {
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-}
-
-.job__image{
-    width: 3rem;
-    position: absolute;
-}
-
-.sass{
-    right: 35%;
-    top: 25%;
-}
-
-.react{
-    right: 20%;
-    top: 50%;
-}
-
-.git{
-    right: 30%;
-    bottom: 25%;
-}
-
-.js{
-    right: 15%;
-    bottom: 10%;
-}
-.circle{
-    background: linear-gradient(210deg, #808080bb, #ffffff);
-    width: 30rem;
-    height: 30rem;
-    position: absolute;
-    border-radius: 50%;
-    top: 0;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    z-index: -1;
-}
-
-
-.hero__section-profile img{
-    width: 30rem;
-    transform: rotate(1deg);
-    -webkit-transform: rotate(1deg);
-    -moz-transform: rotate(1deg);
-    -ms-transform: rotate(1deg);
-    -o-transform: rotate(1deg);
 }
 
 .scroll__buttons{
@@ -162,88 +153,41 @@
     background: #000000;
 }
 
-@media screen and (max-width: 1556px) {
-    .hero__text-2{
-        left: 10rem;
-    }
-}
 
-@media screen and (max-width: 1250px){
-    .hero__text-1{
-        position: unset;
-        margin: 8rem auto 0;
-        background: transparent;
-        font-size: larger;
-        transition: .5s ease;
-        -webkit-transition: .5s ease;
-        -moz-transition: .5s ease;
-        -ms-transition: .5s ease;
-        -o-transition: .5s ease;
-}
-
-    .hero__text-2{
-       position: unset;
-       margin: auto;
-       background: transparent;
-       font-size: medium;
-       transition: .7s ease;
-       -webkit-transition: .7s ease;
-       -moz-transition: .7s ease;
-       -ms-transition: .7s ease;
-       -o-transition: .7s ease;
-}
-
-.git{
-    left: 10%;
-    transition: 2s ease;
-    -webkit-transition: 2s ease;
-    -moz-transition: 2s ease;
-    -ms-transition: 2s ease;
-    -o-transition: 2s ease;
-}
-
-.react{
-    top: 20%;
-    left: 25%;
-}
-.sass{
-    right: 12%;
-}
 @media screen and (max-width: 768px){
-    .hero__text-1{
-        padding: 1rem;
-        margin-top: 5rem;
-        font-size: 1.5rem;
+    .home{
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+    }
+    .home small{
+        font-size: 1.3rem;
     }
 
-    .hero__text-1 h3 span{
-        font-size: inherit;
+    .home p{
+        font-size: 12px;
+        width: 80%;
     }
-    .hero__text-2{
-        display: none;
-    }
-    .circle{
-        width: 20rem;
-        height: 20rem;
-        right: 0;
-        padding: 2rem;
-    }
-    .hero__section-profile img{
-        width: 18rem;
-}
-
-   .sass, .react, .git, .js{
-    display: none;
-   }
-    .scroll__buttons a button{
-        width: .6rem;
-        height: .6rem;
-        
+    .home__image img{
+        margin: 0;
+        width: 90%;
     }
 
+    .btn button{
+        background: #4839a9;
+    }
+    .btn button, a{
+        font-size: 12px;
+        font-weight: 300;
+    }
     .scroll__buttons{
         right: 1.5rem;
     }
+    .scroll__buttons a button{
+        width: .6rem;
+        height: .6rem;
+    
+    }
 
 }
-}
+

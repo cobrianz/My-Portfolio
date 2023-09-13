@@ -9,6 +9,10 @@
   outline: none;
   
 }
+
+.container{
+  width: 94vw;
+}
 .app {
   overflow: hidden;
   display: flex;
@@ -27,7 +31,6 @@ li{
 }
 
 .title{
-  margin-top: 6rem;
   text-align: center;
   font-size: 1.2rem;
 }

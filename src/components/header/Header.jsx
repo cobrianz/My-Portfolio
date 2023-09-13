@@ -4,6 +4,7 @@ import logo from '../../assets/logo.png';
 import { links } from '../../data/links';
 import bars from '../../assets/baseline-density-small.png';
 import x from '../../assets/x.png';
+import telegram from '../../assets/brand-telegram.png';
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -39,7 +40,7 @@ const Header = () => {
   }, [isMenuOpen]);
 
   return (
-    <div className={`header ${isMenuOpen ? 'menu-open' : ''}`} id='home' ref={menuRef}>
+    <div className={`container header ${isMenuOpen ? 'menu-open' : ''}`} id='home' ref={menuRef}>
       <nav>
         <div className="logo">
           <img src={logo} alt="Logo" />

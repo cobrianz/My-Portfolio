@@ -5,7 +5,7 @@ import github from '../../assets/brand-github-filled.png'
 import eye from '../../assets/eye.png'
 const work = () => {
   return (
-    <div className='work' id='work'>  
+    <div className='work container' id='work'>  
       <div className="title">
        <h1>My Creative <span>Portfolio</span><br />
         Section</h1>

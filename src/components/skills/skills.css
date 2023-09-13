@@ -75,13 +75,6 @@
     flex-direction: column;
   }
   
-  .school__about {
-    position: relative;
-    width: 60vw;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-  }
   
   .school__about p {
     width: 25rem;
@@ -91,7 +84,7 @@
     border-radius: .5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     padding: 1rem;
-    margin: 0 auto;
+    margin: 1rem auto;
     display: none;
     transition: transform 0.3s ease; /* Add smooth transition to transform */
   }

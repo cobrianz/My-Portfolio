@@ -3,7 +3,7 @@ import './skills.css'
 import { SkillsData, SchoolDetails } from '../../data/skills';
 const skills = () => {
   return (
-    <div className='skills' id='skills'>
+    <div className='skills container' id='skills'>
       <div className="title">
         <h1>Skills <span>& </span>
           Achievements</h1>
