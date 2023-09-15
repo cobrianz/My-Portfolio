@@ -17,7 +17,7 @@ const Contact = () => {
         console.log(result.text);
         setIsFormSubmitted(true);
         form.current.reset(); // Reset the form
-      //  window.scrollTo(0, 0); // Scroll to the top of the page
+         window.scrollTo(0, 0); // Scroll to the top of the page
       
       })
       .catch((error) => {
