@@ -76,17 +76,18 @@
   }
   
   
-  .school__about p {
-    width: 25rem;
-    font-size: 14px;
-    color: #474646;
+  .school__about p{
+    width: 30%;
+    padding: 1rem;
     background: #fff;
     border-radius: .5rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    margin: 1rem auto;
-    display: none;
-    transition: transform 0.3s ease; /* Add smooth transition to transform */
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    box-shadow: 0 2px 6px rgba(0, 0,0,0.2);
+    position: absolute;
+    right: 3vw;
   }
   
   .school:hover .school__about p {
