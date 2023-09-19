@@ -17,7 +17,7 @@ const Contact = () => {
         console.log(result.text);
         setIsFormSubmitted(true);
         form.current.reset(); // Reset the form
-         window.scrollTo(0, 0); // Scroll to the top of the page
+         window.scrollTo(0,0); // Scroll to the top of the page
       
       })
       .catch((error) => {
@@ -32,7 +32,6 @@ const Contact = () => {
           Take A Coffee <span>& </span> Chat With Me
         </h1>
       </div>
-  
       <div className="contact__section-1">
         <div className="contact">
           <img src={gmail} alt="" />

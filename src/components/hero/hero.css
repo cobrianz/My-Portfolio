@@ -62,11 +62,9 @@
 .btn img{
     width: 1rem;
     margin-right: 0.5rem;
-    filter: invert();
-    -webkit-filter: invert();
 }
 
-.btn > button{
+.btn a:first-child{
     display: flex;
     align-items: center;
     color: #fff;
@@ -79,6 +77,11 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+
+.btn a:first-child img{
+    filter: invert();
+    -webkit-filter: invert();
 }
 
 .btn a{

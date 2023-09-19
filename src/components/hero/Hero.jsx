@@ -6,7 +6,6 @@ import facebook from '../../assets/brand-facebook.png';
 import github from '../../assets/brand-github.png';
 import linkedin from '../../assets/brand-linkedin.png';
 import profile from '../../assets/profile.png';
-
 import mail from '../../assets/mail.png';
 import download from '../../assets/download.png';
 import { SocialLinks } from '../../data/links';
@@ -25,9 +24,9 @@ const Hero = () => {
       <p>I'm a <span>frontend software engineer with a strong passion 
         for building responsive and performant web applications with great user
         experiences that positively impacts the world.</span></p>
-      <div className="btn">
-        <button><img src={mail} alt="" />Hire Me</button>
-        <a href="#">Download CV <img src={download} alt="" /></a>
+      <div className="btn"><a href="#contact">
+       <img src={mail} alt="" />Hire Me</a>
+        <a href="./">Download CV <img src={download} alt="" /></a>
       </div>
       <div className="home__image">
         <img src={home} alt="" />
