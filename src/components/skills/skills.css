@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     gap: 4rem;
-    flex-wrap: wrap;
   }
   
   .skill__left {
@@ -96,7 +95,10 @@
     -o-transition: transform 2s;
 }
   
-@media  screen and (max-width: 768px) {
+@media  screen and (max-width: 800px) {
+  .skills__items {
+    flex-wrap: wrap;
+  }
   .school__about p{
     width: 15rem;
     position: relative;

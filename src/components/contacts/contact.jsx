@@ -42,7 +42,7 @@ const Contact = () => {
           <a href="tel: +254702764907"><p>+254702764907</p></a>
         </div>
       </div>
-      <form action="#" ref={form} onSubmit={sendEmail}>
+      <form action="#" onClick={window.scrollTo(0,0)} ref={form} onSubmit={sendEmail}>
         <input type="text" placeholder='Your Name' name="user_name" required />
         <input type="email" placeholder='Your Email' name="user_email" required />
         <textarea id="" cols="30" rows="10" placeholder='Your Message' name="message" required></textarea>
