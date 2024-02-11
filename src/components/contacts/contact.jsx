@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const form = useRef();
-  const [ setIsFormSubmitted] = useState(false);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false); // Corrected state variable name
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,8 +17,7 @@ const Contact = () => {
         console.log(result.text);
         setIsFormSubmitted(true);
         form.current.reset(); // Reset the form
-         window.scrollTo(0,0); // Scroll to the top of the page
-      
+        window.scrollTo(0, 0); // Scroll to the top of the page
       })
       .catch((error) => {
         console.log(error.text);
@@ -47,7 +46,7 @@ const Contact = () => {
         <input type="email" placeholder='Your Email' name="user_email" required />
         <textarea id="" cols="30" rows="10" placeholder='Your Message' name="message" required></textarea>
         <input type="submit" placeholder='' value='send message' className='button' />
-        </form>
+      </form>
       <div className="copy">
         <p>&copy; Brian Cheruiyot</p>
       </div>

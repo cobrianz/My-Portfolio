@@ -71,6 +71,7 @@
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
+    transition: all 400ms linear;
   }
   
   
@@ -84,15 +85,11 @@
     -o-border-radius: 1rem;
     width: 20rem;
     display: none;
+    transition: all 1s ease;
 }
   
-  .school:hover .school__about p {
+  .school:hover > .school__about p {
     display: block;
-    transition: transform 2s;
-    -webkit-transition: transform 2s;
-    -moz-transition: transform 2s;
-    -ms-transition: transform 2s;
-    -o-transition: transform 2s;
 }
   
 @media  screen and (max-width: 800px) {

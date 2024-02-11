@@ -14,10 +14,10 @@ export const WorkData= [
       },{
         image: about2,
         category: 'Web App',
-        title: 'Blog Webite',
-        about: 'Blog webite build in PHP',
-        github: 'https://github.com/cobrianz/php-blog-project',
-        deploy: 'https://cobrianz.github.io/blog/',
+        title: 'E-commerce Webite',
+        about: 'Ecommerce webite build in PHP, and Javascript',
+        github: 'https://github.com/cobrianz/eduka-ecommerce',
+        deploy: 'https://cobrianz.github.io/eduka-ecommerce/',
       },
       {
         image: about3,
@@ -30,18 +30,10 @@ export const WorkData= [
       {
         image: about4,
         category: 'Web App',
-        title: 'Library Application',
-        about : 'A library application in JavaScript and PHP', 
-        github: 'https://github.com/cobrianz/library/',
-        deploy: 'https://cobrianz.github.io/library/',
-      },
-      {
-        image: about3,
-        category: 'Web App',
         title: 'E-Portifolio',
         about : 'E-portifolio built with HTML, JS and CSS3', 
-        github: 'http://github.com/',
-        deploy: 'http://github.com/',
+        github: 'http://github.com/cobrianz/brianportfolio',
+        deploy: 'https://cobrianz.github.io/brianportfolio/#',
       }
 
 ]

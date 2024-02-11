@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
 import Header from '../header/Header';
 import './hero.css';
-import twitter from '../../assets/xlogo.png';
-import facebook from '../../assets/brand-facebook.png';
 import github from '../../assets/brand-github.png';
 import linkedin from '../../assets/brand-linkedin.png';
 import profile from '../../assets/profile.png';
 import mail from '../../assets/mail.png';
-import download from '../../assets/download.png';
+import download from '../../assets/resume.pdf';
 import { SocialLinks } from '../../data/links';
-import home from '../../assets/home.png'
 
 
 const Hero = () => {
@@ -26,16 +23,12 @@ const Hero = () => {
         experiences that positively impacts the world.</span></p>
       <div className="btn"><a href="#contact">
        <img src={mail} alt="" />Hire Me</a>
-        <a href="./">Download CV <img src={download} alt="" /></a>
+        <a href={download} target='_blank'>Download CV</a>
       </div>
-      <div className="home__image">
-        <img src={home} alt="" />
-      </div>
+      
       </div>
       <div className="hero__section">
         <div className="social__links">
-          <a href={SocialLinks[0]}><img src={twitter} alt="" /></a>
-          <a href={SocialLinks[1]}><img src={facebook} alt="" /></a>
           <a href={SocialLinks[2]}><img src={linkedin} alt="" /></a>
           <a href={SocialLinks[3]}><img src={github} alt="" /></a>
         </div>

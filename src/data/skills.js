@@ -34,9 +34,9 @@ export const SkillsData= [
 
 
 export const SchoolDetails = [
-  "Lorem ipsum dolor, sit amet consectetur adipisicing elit Eum aperiam repellendus quasi vitae architecto facilis pariatur, adipisci porro quod vel",
-   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum aperiam repellendus quasi vitae architecto facilis pariatur, adipisci porro quod vel?",
-   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum aperiam repellendus quasi vitae architecto facilis pariatur, adipisci porro quod vel?",
-   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum aperiam repellendus quasi vitae architecto facilis pariatur, adipisci porro quod vel?",
-     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum aperiam repellendus quasi vitae architecto facilis pariatur, adipisci porro quod vel?"
+  "I have been working as a freelancer developer at Upwork in computer science related tasks. Programming in languages such as Java, PHP, C, React and more. ", 
+    "Took an advanced course at Scrimba on React Development and modern practices",
+   "I was among the students at ALX Africa who participated in web dev bootcamp, I learnt a lot including developing good UI and web securities among others",
+   "",
+   "I joined Maseno University and started my Computer Science journey since the I have learnt skills such as Database Systems Operating Systems, Information Systems, Computer Systems, Programming (pascal, Java, C/C++, Javascript, PHP), Web Design/Internet Computing/E-commerce, Data Structures and Algorithms, Intelligent Systems, Management Information Systems among other software and Hardware courses",
 ]

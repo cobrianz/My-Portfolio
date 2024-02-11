@@ -6,25 +6,25 @@ import image4 from '../assets/avatar8.jpg';
 export const testimonialsData = [
     {
       image: image1,
-      review: "I made the right choice by choosing the Fitclub and by choosing the right plan and program I already achieved my ideal body!",
+      review: "I made the right choice by choosing you and by choosing the rightprogram I already reached many customers!",
       name: 'MATHEW HENDRICKSON',
-      status : 'Samsung Kenya'
+      status : 'Freelancer'
     },
     {
       image: image2,
-      review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsam, ab itaque nam perferendis impedit sint ',
+      review: "you're the best database SQL programmer.",
       name: 'JOHN KEVIN',
       status: 'Oracle Inc'
     },
     {
       image : image3,
-      review:' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur quod voluptatem',
+      review:'I appreciate learning with you, thanks a lot for your help.',
       name: ' Mary Dickson',
       status: "ALX, partner"
     },
     {
       image : image4,
-      review:' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur quod voluptatem',
+      review:'I like how you design the UI they are soft and appealing, You time management skill is on another level. I will always keep in touch.',
       name: 'Frankline Hubson',
       status: "Client, Freelancer"
     }
