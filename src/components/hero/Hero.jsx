@@ -7,6 +7,7 @@ import profile from '../../assets/profile.png';
 import mail from '../../assets/mail.png';
 import download from '../../assets/resume.pdf';
 import { SocialLinks } from '../../data/links';
+import home from '../../assets/home.svg'
 
 
 const Hero = () => {
@@ -25,7 +26,9 @@ const Hero = () => {
        <img src={mail} alt="" />Hire Me</a>
         <a href={download} target='_blank'>Download CV</a>
       </div>
-      
+      <div className="home__image">
+        <img src={home} alt="" />
+      </div>
       </div>
       <div className="hero__section">
         <div className="social__links">

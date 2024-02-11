@@ -18,7 +18,7 @@
 }
 
 .home >img{
-    width: 6rem;
+    width: 8rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -48,7 +48,7 @@
 }
 
 .home__image img{
-    width: 50%;
+    width: 620px;
     filter: brightness(90%);
     -webkit-filter: brightness(90%);
 }
